@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    <title>CrookedTwig4</title>
+		<style>
+			body {
+				width: 100vw;
+				padding: 0;
+				margin: 0;
+				background-color: #ffffff;
+				overflow: scroll;
+				position: relative;
+			}
+			input {
+				position: relative;
+				left: 37vw;
+				top: 20vh;
+				font-size: 250%;
+			}
+			button {
+				position: relative;
+				left: 44vw;
+				top: 25vh;
+				width: 10%;
+				height: 5vh;
+				font-size: 250%;
+			}
+		</style>
+	</head>
+	<body>
+		<br>
+		<input type="text" id="box">
+		<br><br>
+		<button onclick="onClickFun();">Run Code</button>
+		<script>
+			function onClickFun() {
+				var code = document.getElementById('box').value;
+				eval(code);
+			}
+		</script>
+	</body>
+</html>
